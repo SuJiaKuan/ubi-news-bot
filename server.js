@@ -8,7 +8,7 @@ const config = require('./config');
 
 function main() {
   // Regular job for news feed.
-  cron.schedule('* * * * *', async () => {
+  cron.schedule('0 13 * * *', async () => {
     try {
       const newsInfos = await collectTodayNews(
         config.news.keywords,
