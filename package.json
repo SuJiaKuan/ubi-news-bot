@@ -1,0 +1,17 @@
+{
+  "name": "ubi-news-bot",
+  "version": "1.0.0",
+  "description": "A robot that automatically collects news about UBI everyday",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Su JiaKuan",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.19.2",
+    "moment": "2.26.0",
+    "qs": "6.9.4",
+    "uuid": "8.1.0"
+  }
+}
