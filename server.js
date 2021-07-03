@@ -30,13 +30,11 @@ function main() {
   });
 
   // Regular job to keep Heroku API alive.
-  cron.schedule('* * * * *', async () => {
+  cron.schedule('*/10 * * * *', async () => {
     try {
       await awakeHeroku(config.heroku.host);
-      console.log('success')
     } catch (err) {
     }
-    console.log('Keep alive')
   });
 
   // Setup a simple http server for Heorku API awaking.
