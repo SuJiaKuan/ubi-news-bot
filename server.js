@@ -1,9 +1,11 @@
+const cron = require('node-cron');
+
 const { collectTodayNews } = require('./news');
 const { sendMessage } = require('./slack');
 const config = require('./config');
 
 function main() {
-  setTimeout(async () => {
+  cron.schedule('0 13 * * *', async () => {
     try {
       const newsInfos = await collectTodayNews(
         config.news.keywords,
@@ -22,7 +24,7 @@ function main() {
     } catch (err) {
       console.error(err);
     }
-  }, 0);
+  });
 }
 
 main();
