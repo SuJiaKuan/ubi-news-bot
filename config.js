@@ -8,6 +8,5 @@ module.exports = {
       'Universal Basic Income',
       'Unconditional Basic Income',
     ],
-    lang: 'zh',
   }
 }
