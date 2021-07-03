@@ -20,7 +20,8 @@ async function getNews(keywords, apiKey, from, to) {
 }
 
 async function collectTodayNews(keywords, apiKey) {
-  const today = moment().format('YYYY-MM-DD').toString();
+  // const today = moment().format('YYYY-MM-DD').toString();
+  const today = '2021-06-14';
   const transformedKeywords = keywords.map(k => `\"${k}\"`).join(' OR ');
 
   const articles = await getNews(
