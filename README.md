@@ -22,6 +22,8 @@ The repository is built for UBI Taiwan. If you want to build your own version, p
 
 * Edit the value of `heroku.host` in `config.js` as your Heroku app host and apply git commit for the change.
 
+* Edit the value of `news.keywords` in `config.js` as your keywords for UBI and apply git commit for the change.
+
 * Set News API key and Slack app token in your Heroku app by running:
 
 ```bash
