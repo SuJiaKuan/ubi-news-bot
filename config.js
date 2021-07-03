@@ -10,5 +10,8 @@ module.exports = {
   },
   slack: {
     channel: '#ubi-news-feed',
-  }
+  },
+  heroku: {
+    host: 'https://ubi-news-bot.herokuapp.com',
+  },
 }
