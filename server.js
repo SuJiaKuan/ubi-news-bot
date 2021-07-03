@@ -43,7 +43,7 @@ function main() {
   http.createServer((req, res) => {
     res.writeHead(200);
     res.end('');
-  }).listen(21434);
+  }).listen(process.env.PORT || 5000);
 }
 
 main();
