@@ -7,5 +7,8 @@ module.exports = {
       'Universal Basic Income',
       'Unconditional Basic Income',
     ],
+  },
+  slack: {
+    channel: '#ubi-news-feed',
   }
 }
