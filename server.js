@@ -34,6 +34,7 @@ function main() {
     try {
       await awakeHeroku(config.heroku.host);
     } catch (err) {
+      console.error(err);
     }
   });
 
